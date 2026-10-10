@@ -1,0 +1,13 @@
+outputs/
+data/
+work/
+*.zip
+*.tif
+*.tiff
+*.pt
+*.pth
+__pycache__/
+.pytest_cache/
+.venv/
+*.egg-info/
+docs/P0_P1*

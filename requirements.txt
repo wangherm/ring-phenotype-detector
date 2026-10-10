@@ -1,0 +1,9 @@
+numpy>=1.26,<3
+scipy>=1.11,<2
+scikit-image>=0.23,<0.27
+tifffile>=2024.2
+imagecodecs>=2024.1
+opencv-python-headless>=4.9,<6
+Pillow>=10
+PyYAML>=6
+pytest>=8
