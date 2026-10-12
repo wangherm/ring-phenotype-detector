@@ -1,2 +1,2 @@
 """Color-independent, untrained ring candidate baseline."""
-__version__ = '0.1.0'
+__version__ = '0.2.0'

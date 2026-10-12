@@ -1,23 +1,32 @@
 fluorescence_channels: [auto]
 segmentation:
-  edge_sigma: 3.0
-  edge_low: 0.05
-  edge_high: 0.12
-  min_seed_area: 3000
-  closing_radius: 4
+  backend: cellpose
+  model_type: yeast_BF_cp3
+  model_cache: outputs/model_cache
+  diameter: 100
+  inference_scale: 0.5
+  gpu: false
+  cpu_threads: 2
+  flow_threshold: 0.4
+  cellprob_threshold: 0.0
   min_area: 900
   max_area: 40000
-  seed_prominence: 12
+  small_fragment_fraction: 0.30
   min_focus: 0.025
 candidate:
   background_sigma: 24
   smoothing_sigma: 1.1
   min_signal_steps: 4
-  min_radius: 3
+  min_boundary_steps: 4
+  min_signal_snr: 3
+  min_radius: 5
   max_radius: 38
   boundary_margin: 5
-  min_continuity: 0.60
+  min_continuity: 0.70
+  max_gap_fraction: 0.28
   min_contrast: 0.10
   proposal_score: 0.18
   levels: [0.15, 0.25, 0.38, 0.52, 0.68]
+  tile_size: 384
+  tile_overlap: 112
 seed: 42
